@@ -25,3 +25,13 @@ Api(s) usadas.
 <ul>
 <li>Disponibilizar os eventos por calendário.</li>
 </ul>
+<h2>Teste do Sistema</h2>
+<ul>
+<li>Cadastro de usuario</li>
+![alt text](https://github.com/21E321E4-DFE-GRP-EDC-01C1-T1-P1/Surprise-me/blob/Estrutura-da-API-de-Dados-(MongoDB)/Documentation/img/TestCadastro/Capturar.PNG?raw=true)
+<li>Login do Usuario</li>
+![alt text](https://github.com/21E321E4-DFE-GRP-EDC-01C1-T1-P1/Surprise-me/blob/Estrutura-da-API-de-Dados-(MongoDB)/Documentation/img/TestToken/Capturar.PNG?raw=true)
+<li>Token do Usuario</li>
+![alt text](https://github.com/21E321E4-DFE-GRP-EDC-01C1-T1-P1/Surprise-me/blob/Estrutura-da-API-de-Dados-(MongoDB)/Documentation/img/TestToken/Capturar2.PNG?raw=true)
+
+</ul>
