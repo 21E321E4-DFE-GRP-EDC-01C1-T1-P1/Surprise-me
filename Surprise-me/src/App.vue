@@ -1,34 +1,30 @@
 <template>
-  <ul id="#example-2">
+  <ul>
+    {{OBJ}}
     <li v-for="item in items" :key="item.id">
-      {{ item.nome }} <br>
-      {{ item.email }} <br>
-      {{ item.status }} <br>
-      
+      {{ item.nome }} <br />
+      {{ item.email }} <br />
+      {{ item.status }} <br />
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-  el:"#example-2",
   data() {
     return {
       items: [],
+      OBJ: this.items,
     };
   },
   created() {
-    fetch("http://localhost:3030/user", {
-      method: "get",
-      mode: "cors",
-      cache: "default",
-      headers: {
-        "content-type": "application/json",
-      },
-    })
+    fetch("http://localhost:3030/user", { method: "GET",})
       .then((res) => res.json())
-      .then((data) => (this.items = data.items))
-  }
+      .then((data) => (this.items = data))
+      .catch((error) => {
+        alert(error.message);
+      });
+  },
 };
 </script>
 

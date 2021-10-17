@@ -6,6 +6,7 @@ class UserController {
   async list(req, res) {
     let usersList = await User.find();
     res.json(usersList);
+    console.log(usersList)
   }
 
   async store(req, res) {
