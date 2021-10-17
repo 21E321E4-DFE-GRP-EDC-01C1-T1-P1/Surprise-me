@@ -3,12 +3,9 @@ const bcrypt = require("bcryptjs");
 const yup = require("yup");
 
 class UserController {
-  show(req, res) {
-    var users = ["Kaio", "Larissa", "Danver"];
-    return res.status(200).json({
-      error: false,
-      users,
-    });
+  async list(req, res) {
+    let usersList = await User.find();
+    res.json(usersList);
   }
 
   async store(req, res) {
@@ -31,8 +28,8 @@ class UserController {
         message: "Este usuário já existe!",
       });
     }
-    const { nome, email, senha, posicao,status,endereco} = req.body;
-    const data = {  nome, email, senha, posicao,status,endereco };
+    const { nome, email, senha, posicao, status, endereco } = req.body;
+    const data = { nome, email, senha, posicao, status, endereco };
     data.senha = await bcrypt.hash(data.senha, 8);
     await User.create(data, (err) => {
       if (err)

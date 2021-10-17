@@ -6,7 +6,7 @@ const config = require('../../config/auth');
 class LoginController {
 
   async index(req, res) {
-    const { email, senha } = req.body;
+    const { email, senha } = req.body;1
 
     const userExist = await User.findOne({ email });
 
