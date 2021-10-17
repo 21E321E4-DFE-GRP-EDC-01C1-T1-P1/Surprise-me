@@ -6,7 +6,7 @@ class Connection {
   }
 
   dataBaseConnectionMongoDB(){
-    this.mongoDBConnection = mongoose.connect("mongodb://localhost/nodejs", {
+    this.mongoDBConnection = mongoose.connect("mongodb://localhost/surpriseme", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
