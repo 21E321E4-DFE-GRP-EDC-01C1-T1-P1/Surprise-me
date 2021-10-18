@@ -22,7 +22,6 @@ class App {
       res.header('Access-Control-Allow-Credentials', true);
       res.header('Content-Type', 'application/json');
       res.header('Accept', 'application/json');
-
       next();
     })
   }

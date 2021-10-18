@@ -29,8 +29,8 @@ class UserController {
         message: "Este usuário já existe!",
       });
     }
-    const { nome, email, senha, posicao, status, endereco } = req.body;
-    const data = { nome, email, senha, posicao, status, endereco };
+    const { nome, email, senha, posicao, status, endereco ,imgUrl} = req.body;
+    const data = { nome, email, senha, posicao, status, endereco ,imgUrl};
     data.senha = await bcrypt.hash(data.senha, 8);
     await User.create(data, (err) => {
       if (err)

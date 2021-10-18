@@ -8,6 +8,7 @@ const User = mongoose.Schema(
     posicao : { type: String},
     status : { type: String},
     endereco : { type: String},
+    imgUrl:{ type: String}
   },
   { 
     timestamps: true,
