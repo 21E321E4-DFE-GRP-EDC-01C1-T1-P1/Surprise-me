@@ -2,8 +2,8 @@
   <div id="nav">
     <img src="./assets/surpriselogo.svg" class="logo_app" alt="logo">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/CreateUser">CreateUser</router-link>
+    <router-link to="/About">About</router-link> |
+    <router-link to="/User">User</router-link>
   </div>
   <router-view/>
 </template>
@@ -11,9 +11,9 @@
 <style>
 .logo_app {
   border-radius: 190px;
-  width:40px;
-  height: 40px;
-  margin: -15px 10px;
+  width:50px;
+  height: 50px;
+  margin: -30px 10px;
   background-color:aliceblue;
 }
 #app {
@@ -26,7 +26,7 @@
 
 #nav {
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   background-color:#808080;
   text-align: justify;
 }
@@ -38,5 +38,8 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+body {
+  background-color:aliceblue;
 }
 </style>
