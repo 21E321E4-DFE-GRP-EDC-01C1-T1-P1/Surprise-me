@@ -6,7 +6,7 @@ const UserController = require('./app/Controllers/UserController');
 
 const routes = new Router();
 
-routes.post("/user", UserController.store);
+routes.post("/user", UserController.create);
 routes.get("/user", UserController.list);
 
 routes.post("/login", LoginController.index);

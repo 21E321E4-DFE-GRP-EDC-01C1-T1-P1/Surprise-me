@@ -9,7 +9,7 @@ class UserController {
     console.log(usersList)
   }
 
-  async store(req, res) {
+  async create(req, res) {
     // let schema = yup.object().shape({
     //   name: yup.string().required(),
     //   email: yup.string().email().required(),
