@@ -1,4 +1,5 @@
 <template>
+<div>
   <div id="nav">
     <img src="./assets/surpriselogo.svg" class="logo_app" alt="logo">
     <router-link to="/">Home</router-link> |
@@ -6,9 +7,13 @@
     <router-link to="/User">User</router-link>
   </div>
   <router-view/>
+</div>
 </template>
 
 <style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .logo_app {
   border-radius: 190px;
   width:50px;

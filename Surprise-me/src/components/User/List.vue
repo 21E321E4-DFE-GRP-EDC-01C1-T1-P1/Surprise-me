@@ -1,9 +1,14 @@
 <template>
   <div class="conteiner">
     <div v-for="item in items" class="card_list_user" :key="item.id">
-      <div class="card">
-        <img :src="item.imgUrl" alt="Avatar" style="width: 100%" />
-        <div class="container">
+      <div class="card rounded-lg">
+        <img
+          :src="item.imgUrl"
+          alt="Avatar"
+          class="image-avatar rounded-lg"
+          style="width: 100%"
+        />
+        <div class="container font-mono">
           <h4>
             <b>Nome: {{ item.nome }}</b>
           </h4>
@@ -50,25 +55,21 @@ export default {
 .conteiner {
   display: flex;
 }
-.card_list_user {
-
-}
 .conteiner p {
   margin: 20px 0px;
 }
-img {
-  width: 100px;
-  height: 200px;
+.image-avatar {
+  width: 200px;
+  height: 300px;
   object-fit: cover;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 250px;
-  height: 350px;
+  height: 480px;
   margin: 20px;
-    background-color: white;
-    border-radius:20px ;
+  background-color: white;
 }
 
 .card:hover {
