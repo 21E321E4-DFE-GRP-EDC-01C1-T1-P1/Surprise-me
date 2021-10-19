@@ -31,6 +31,7 @@ class UserController {
     }
     const { nome, email, senha, posicao, status, endereco ,imgUrl} = req.body;
     const data = { nome, email, senha, posicao, status, endereco ,imgUrl};
+    console.log(data)
     data.senha = await bcrypt.hash(data.senha, 8);
     await User.create(data, (err) => {
       if (err)

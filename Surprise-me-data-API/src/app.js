@@ -16,7 +16,7 @@ class App {
     this.app.use(express.json());
     this.app.use(morgan('dev'));
     this.app.use((req, res, next) => {
-      res.header("Access-Controll-Allow-Origin", " http://localhost:8080");
+      res.header("Access-Controll-Allow-Origin", "http://localhost:3000");
       res.header("Access-Controll-Allow-Methods", "Get, POST, PUT,OPTIONS, DELETE");
       res.header("Access-Controll-Allow-Headers","*");// "Access, Content-type, Authorization, Acept, Origin, X-Requested-With")
       res.header('Access-Control-Allow-Credentials', true);
