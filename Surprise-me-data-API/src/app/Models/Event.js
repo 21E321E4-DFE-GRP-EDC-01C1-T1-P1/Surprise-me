@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 const Event = mongoose.Schema(
   {
     nome: { type: String },
-    criador: { type: String},
-    endereco: { type: String},
+    descricao: { type: String },
+    criador: { type: String },
+    endereco: { type: String },
     status: { type: String },
     ponto: { type: String },
+    imgUrl: { type: String },
   },
   {
     timestamps: true,

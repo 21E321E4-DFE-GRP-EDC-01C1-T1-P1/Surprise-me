@@ -4,10 +4,10 @@
   </div>
 </template>
 <script>
-import Create from '@/components/User/Create.vue'
+import Create from '@/components/Events/Create.vue'
 
 export default {
-  name: 'User',
+  name: 'Events',
   components: {
     Create
   }
