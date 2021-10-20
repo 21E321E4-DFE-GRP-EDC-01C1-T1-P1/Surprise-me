@@ -31,11 +31,13 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
-
 .logo_app {
   border-radius: 190px;
   width: 50px;

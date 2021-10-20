@@ -1,5 +1,5 @@
 <template>
-  <div class="conteiner flex justify-between grid grid-cols-4">
+  <div class="conteiner flex justify-between  grid grid-cols-3">
     <div v-for="item in items" class="card_list_user" :key="item.id">
       <div class="card rounded-lg shadow-2xl">
         <img
