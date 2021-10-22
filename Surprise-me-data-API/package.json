@@ -1,7 +1,7 @@
 {
   "name": "surprise-me-data-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.14"
   },
   "description": ""
 }
