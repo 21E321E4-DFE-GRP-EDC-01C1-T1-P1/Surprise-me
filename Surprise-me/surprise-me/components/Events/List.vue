@@ -1,17 +1,27 @@
 <template>
-  <div class="conteiner">
-    <div v-for="item in items" :key="item.id">
-      <div class="card">
-        <img :src="item.imgUrl" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h4>
-            <b>Nome: {{ item.nome }}</b>
-          </h4>
-          <p>Descriçao: {{ item.descricao }}</p>
-          <p>Criador: {{ item.criador }}</p>
-          <p>Atualizado: {{ dataform(item.updatedAt) }}</p>
-        </div>
-      </div>
+  <div>
+    <div v-for="item in items" :key="item.id" class="my-3">
+      <b-card no-body class="overflow-hidden " style="max-width: 740px">
+        <b-row no-gutters>
+          <b-col md="6">
+            <b-card-img
+              v-bind:src="item.imgUrl"
+              v-bind:alt="item.nome"
+              class="rounded-0"
+            ></b-card-img>
+          </b-col>
+          <b-col md="6">
+            <b-card-body v-bind:title="item.nome">
+              <b-card-text>
+                {{ item.descricao }}
+              </b-card-text>
+              <b-card-text>
+              Atualizado: {{ dataform(item.updatedAt) }}
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
     </div>
   </div>
 </template>
@@ -33,43 +43,18 @@ export default {
       });
   },
   methods: {
-  dataform :function (data) {
+    dataform: function (data) {
       var dataAtual = new Date(data);
       var dia = dataAtual.getDate();
       var mes = dataAtual.getMonth() + 1;
       var ano = dataAtual.getFullYear();
       // var horas = dataAtual.getHours();
       // var minutos = dataAtual.getMinutes();
-      return `${dia}/${mes}/${ano}`
-    }
+      return `${dia}/${mes}/${ano}`;
+    },
   },
 };
 </script>
 
 <style>
-.conteiner {
-  display: flex;
-  background-color:blanchedalmond;
-}
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 200px;
-  height: 400px;
-  margin: 20px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
 </style>
