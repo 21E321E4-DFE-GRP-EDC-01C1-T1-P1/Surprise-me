@@ -5,7 +5,7 @@
       <em>Usuario</em>
     </template>
     <b-dropdown-item href="#">Logar</b-dropdown-item>
-    <b-dropdown-item href="#">Cadastar</b-dropdown-item>
+    <b-dropdown-item><MenuUserCreate/></b-dropdown-item>
     <b-dropdown-item href="#">Editar</b-dropdown-item>
     <b-dropdown-item href="#">Listagem</b-dropdown-item>
     <b-dropdown-item href="#">Excluir</b-dropdown-item>

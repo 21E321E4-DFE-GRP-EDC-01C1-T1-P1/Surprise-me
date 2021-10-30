@@ -37,7 +37,7 @@ class UserController {
       if (err)
         return res.status(400).json({
           error: true,
-          message: "Erro ao tentar inserir usuário no MongoDB",
+          message: `Erro ao tentar inserir usuário no MongoDB ( ${err.message} )`,
           description: err,
         });
 
