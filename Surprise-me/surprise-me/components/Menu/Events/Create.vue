@@ -1,11 +1,11 @@
 <template>
   <div>
-    <b-dropdown-item v-b-modal.modal-menu-user-create>Cadastrar</b-dropdown-item>
+    <b-dropdown-item v-b-modal.modal-menu-event-create>Cadastro</b-dropdown-item>
 
     <b-modal
-      id="modal-menu-user-create"
+      id="modal-menu-event-create"
       ref="modal"
-      title="Cadastro de Usuario"
+      title="Cadastro de Evento"
       @show="resetModal"
       @hidden="resetModal"
       @ok="create"
@@ -26,40 +26,40 @@
           ></b-form-input>
         </b-form-group>
         <b-form-group
-          label="Email"
-          label-for="email-input"
+          label="Descrição"
+          label-for="descricao-input"
           invalid-feedback="Name is required"
           :state="nameState"
         >
           <b-form-input
-            id="email-input"
-            v-model="email"
+            id="descricao-input"
+            v-model="descricao"
             :state="nameState"
             required
           ></b-form-input>
         </b-form-group>
         <b-form-group
-          label="Senha"
-          label-for="senha-input"
+          label="Criador"
+          label-for="criador-input"
           invalid-feedback="Name is required"
           :state="nameState"
         >
           <b-form-input
-            id="senha-input"
-            v-model="senha"
+            id="criador-input"
+            v-model="criador"
             :state="nameState"
             required
           ></b-form-input>
         </b-form-group>
         <b-form-group
-          label="Cargo"
-          label-for="posicao-input"
+          label="Endereço"
+          label-for="endereco-input"
           invalid-feedback="Name is required"
           :state="nameState"
         >
           <b-form-input
-            id="posicao-input"
-            v-model="posicao"
+            id="endereco-input"
+            v-model="endereco"
             :state="nameState"
             required
           ></b-form-input>
@@ -78,13 +78,13 @@
           ></b-form-input>
         </b-form-group>
         <b-form-group
-          label="endereco"
-          label-for="endereco-input"
+          label="Pontos"
+          label-for="ponto-input"
           invalid-feedback="Name is required"
           :state="nameState"
         >
           <b-form-input
-            id="endereco-input"
+            id="ponto-input"
             v-model="email"
             :state="nameState"
             required
@@ -119,11 +119,11 @@ export default {
   data() {
     return {
       nome: "",
-      email: "",
-      senha: "",
-      posicao: "",
-      status: "",
+      descricao: "",
+      criador: "",
       endereco: "",
+      status: "",
+      ponto: "",
       imgUrl: "",
       nameState: null,
       submittedNames: [],
@@ -147,13 +147,12 @@ export default {
     },
     resetModal() {
       (this.nome = ""),
-        (this.email = ""),
-        (this.senha = ""),
-        (this.posicao = ""),
-        (this.status = ""),
+        (this.descricao = ""),
+        (this.criador = ""),
         (this.endereco = ""),
-        (this.imgUrl = ""),
-        (this.nameState = null);
+        (this.status = ""),
+        (this.ponto = ""),
+        (this.imgUrl = "");
     },
     handleSubmit() {
       if (!this.checkFormValidity()) {
@@ -161,11 +160,11 @@ export default {
       }
       this.submittedNames.push(this.name);
       this.$nextTick(() => {
-        this.$bvModal.hide("modal-menu-user-create");
+        this.$bvModal.hide("modal-menu-event-create");
       });
     },
     create() {
-      fetch("http://localhost:3030/user", {
+      fetch("http://localhost:3030/events", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -173,11 +172,11 @@ export default {
         },
         body: JSON.stringify({
           nome: this.nome,
-          email: this.email,
-          senha: this.senha,
-          posicao: this.posicao,
-          status: this.status,
+          descricao: this.descricao,
+          criador: this.criador,
           endereco: this.endereco,
+          status: this.status,
+          ponto: this.ponto,
           imgUrl: this.imgUrl,
         }),
       })
