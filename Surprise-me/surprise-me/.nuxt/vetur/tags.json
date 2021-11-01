@@ -1,0 +1,53 @@
+{
+  "Menu": {
+    "description": "Auto imported from components/Menu.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "EventsCreate": {
+    "description": "Auto imported from components/Events/Create.vue"
+  },
+  "EventsDelete": {
+    "description": "Auto imported from components/Events/Delete.vue"
+  },
+  "EventsList": {
+    "description": "Auto imported from components/Events/List.vue"
+  },
+  "EventsUpdate": {
+    "description": "Auto imported from components/Events/Update.vue"
+  },
+  "MenuEvents": {
+    "description": "Auto imported from components/Menu/Events.vue"
+  },
+  "MenuSearch": {
+    "description": "Auto imported from components/Menu/Search.vue"
+  },
+  "MenuUser": {
+    "description": "Auto imported from components/Menu/User.vue"
+  },
+  "UserCreate": {
+    "description": "Auto imported from components/User/Create.vue"
+  },
+  "UserCriacao": {
+    "description": "Auto imported from components/User/Criacao.vue"
+  },
+  "UserDelete": {
+    "description": "Auto imported from components/User/Delete.vue"
+  },
+  "UserList": {
+    "description": "Auto imported from components/User/List.vue"
+  },
+  "UserUpdate": {
+    "description": "Auto imported from components/User/Update.vue"
+  },
+  "MenuEventsCreate": {
+    "description": "Auto imported from components/Menu/Events/Create.vue"
+  },
+  "MenuUserCreate": {
+    "description": "Auto imported from components/Menu/User/Create.vue"
+  }
+}
