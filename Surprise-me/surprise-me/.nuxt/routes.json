@@ -2,31 +2,36 @@
   {
     "name": "About",
     "path": "/About",
-    "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\About.vue",
-    "chunkName": "pages/About"
+    "component": "D:\\\\Users\\\\Renat\\\\OneDrive\\\\Área de Trabalho\\\\FACULDADE INFNET\\\\AULAS\\\\2021.7 - JavaScript-HTML-CSS\\\\PROJETO DE BLOCO\\\\Surprise-me\\\\Surprise-me\\\\Surprise-me\\\\surprise-me\\\\pages\\\\About.vue",
+    "chunkName": "pages/About",
+    "_name": "_0aae001c"
   },
   {
     "name": "Events",
     "path": "/Events",
-    "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\Events.vue",
-    "chunkName": "pages/Events"
+    "component": "D:\\\\Users\\\\Renat\\\\OneDrive\\\\Área de Trabalho\\\\FACULDADE INFNET\\\\AULAS\\\\2021.7 - JavaScript-HTML-CSS\\\\PROJETO DE BLOCO\\\\Surprise-me\\\\Surprise-me\\\\Surprise-me\\\\surprise-me\\\\pages\\\\Events.vue",
+    "chunkName": "pages/Events",
+    "_name": "_3424b59a"
   },
   {
     "name": "Home",
     "path": "/Home",
-    "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
+    "component": "D:\\\\Users\\\\Renat\\\\OneDrive\\\\Área de Trabalho\\\\FACULDADE INFNET\\\\AULAS\\\\2021.7 - JavaScript-HTML-CSS\\\\PROJETO DE BLOCO\\\\Surprise-me\\\\Surprise-me\\\\Surprise-me\\\\surprise-me\\\\pages\\\\Home.vue",
+    "chunkName": "pages/Home",
+    "_name": "_40b6fca0"
   },
   {
     "name": "User",
     "path": "/User",
-    "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\User.vue",
-    "chunkName": "pages/User"
+    "component": "D:\\\\Users\\\\Renat\\\\OneDrive\\\\Área de Trabalho\\\\FACULDADE INFNET\\\\AULAS\\\\2021.7 - JavaScript-HTML-CSS\\\\PROJETO DE BLOCO\\\\Surprise-me\\\\Surprise-me\\\\Surprise-me\\\\surprise-me\\\\pages\\\\User.vue",
+    "chunkName": "pages/User",
+    "_name": "_4dcf9d8c"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "D:\\\\Users\\\\Renat\\\\OneDrive\\\\Área de Trabalho\\\\FACULDADE INFNET\\\\AULAS\\\\2021.7 - JavaScript-HTML-CSS\\\\PROJETO DE BLOCO\\\\Surprise-me\\\\Surprise-me\\\\Surprise-me\\\\surprise-me\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_9a1889fe"
   }
 ]

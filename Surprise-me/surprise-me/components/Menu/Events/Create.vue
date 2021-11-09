@@ -127,7 +127,7 @@ export default {
       imgUrl: "",
       nameState: null,
       submittedNames: [],
-      titleMensagem: "Cadastro de Usuário.",
+      titleMensagem: "Cadastro de Evento.",
     };
   },
   methods: {
