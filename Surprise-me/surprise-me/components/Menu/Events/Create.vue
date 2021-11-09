@@ -72,7 +72,7 @@
         >
           <b-form-input
             id="status-input"
-            v-model="email"
+            v-model="status"
             :state="nameState"
             required
           ></b-form-input>
@@ -85,7 +85,7 @@
         >
           <b-form-input
             id="ponto-input"
-            v-model="email"
+            v-model="ponto"
             :state="nameState"
             required
           ></b-form-input>

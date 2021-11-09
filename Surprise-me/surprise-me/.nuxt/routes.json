@@ -3,35 +3,30 @@
     "name": "About",
     "path": "/About",
     "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\About.vue",
-    "chunkName": "pages/About",
-    "_name": "_6b812060"
+    "chunkName": "pages/About"
   },
   {
     "name": "Events",
     "path": "/Events",
     "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\Events.vue",
-    "chunkName": "pages/Events",
-    "_name": "_66c13c66"
+    "chunkName": "pages/Events"
   },
   {
     "name": "Home",
     "path": "/Home",
     "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home",
-    "_name": "_2e1ec66c"
+    "chunkName": "pages/Home"
   },
   {
     "name": "User",
     "path": "/User",
     "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\User.vue",
-    "chunkName": "pages/User",
-    "_name": "_3b376758"
+    "chunkName": "pages/User"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\rlcit\\\\Desktop\\\\Front end\\\\Projeto de Bloco Desenvolvimento Front-End\\\\Surprise-me\\\\surprise-me\\\\surprise-me\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_72852ab5"
+    "chunkName": "pages/index"
   }
 ]
