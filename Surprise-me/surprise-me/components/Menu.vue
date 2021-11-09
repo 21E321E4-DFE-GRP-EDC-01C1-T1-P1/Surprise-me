@@ -26,6 +26,22 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <div class="input-group mb-3" style="max-width: 740px; margin: 1em auto">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Evento"
+          aria-label="Evento"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          Filtrar
+        </button>
+    </div>
   </div>
 </template>
 

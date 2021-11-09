@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       items: [],
+      itemsFiltered: [],
     };
   },
   created() {
@@ -55,6 +56,18 @@ export default {
       // var horas = dataAtual.getHours();
       // var minutos = dataAtual.getMinutes();
       return `${dia}/${mes}/${ano}`;
+    },
+    filtrarLista: function (filtro) {
+      if (filtro !== "") {
+        this.items.forEach((it) => {
+          if (it.nome.includes(filtro)) {
+            this.itemsFiltered.push(it);
+          }
+        });
+      }
+      else {
+          this.itemsFiltered = []
+        }
     },
   },
 };
