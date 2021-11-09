@@ -76,6 +76,7 @@ export default {
           }
         })
         this.items = this.itemsFiltered;
+        this.itemsFiltered = []
       }
       else {
           this.items = this.itemsJson
