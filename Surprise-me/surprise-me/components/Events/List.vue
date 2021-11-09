@@ -1,5 +1,16 @@
 <template>
   <div>
+    <div class="input-group mb-3" style="max-width: 740px; margin: 1em auto">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Pesquisar Eventos"
+          aria-label="Evento"
+          aria-describedby="button-addon2"
+          v-model="filtro"
+        />
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" v-on:click="filtrarLista">Filtrar</button>
+    </div>
     <div v-for="item in items" :key="item.id" class="my-3">
       <b-card no-body class="overflow-hidden " style="max-width: 740px">
         <b-row no-gutters>
@@ -31,12 +42,16 @@ export default {
   data() {
     return {
       items: [],
+      itemsFiltered: [],
+      itemsJson: [],
+      filtro: "",
     };
   },
   created() {
     fetch("http://localhost:3030/events", { method: "GET" })
       .then((res) => res.json())
       .then((data) => (this.items = data))
+      .then((data) => (this.itemsJson = data))
       .then(() => {})
       .catch((error) => {
         alert(error.message);
@@ -51,6 +66,20 @@ export default {
       // var horas = dataAtual.getHours();
       // var minutos = dataAtual.getMinutes();
       return `${dia}/${mes}/${ano}`;
+    },
+    filtrarLista: function () {
+      let filtro = this.filtro;
+      if (filtro !== "") {
+        this.itemsJson.forEach((it) => {
+          if (it.nome.toUpperCase().toLowerCase().includes(filtro.toUpperCase().toLowerCase())) {
+            this.itemsFiltered.push(it);
+          }
+        })
+        this.items = this.itemsFiltered;
+      }
+      else {
+          this.items = this.itemsJson
+        }
     },
   },
 };
