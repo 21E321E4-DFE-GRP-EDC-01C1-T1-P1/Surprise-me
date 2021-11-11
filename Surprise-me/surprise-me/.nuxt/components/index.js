@@ -15,6 +15,7 @@ export { default as UserList } from '../..\\components\\User\\List.vue'
 export { default as UserUpdate } from '../..\\components\\User\\Update.vue'
 export { default as MenuEventsCreate } from '../..\\components\\Menu\\Events\\Create.vue'
 export { default as MenuUserCreate } from '../..\\components\\Menu\\User\\Create.vue'
+export { default as MenuUserLogin } from '../..\\components\\Menu\\User\\Login.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

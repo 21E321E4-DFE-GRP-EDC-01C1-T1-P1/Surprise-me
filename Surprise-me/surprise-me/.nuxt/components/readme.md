@@ -23,3 +23,4 @@ You can directly use them in pages and other components without the need to impo
 - `<UserUpdate>` | `<user-update>` (components/User/Update.vue)
 - `<MenuEventsCreate>` | `<menu-events-create>` (components/Menu/Events/Create.vue)
 - `<MenuUserCreate>` | `<menu-user-create>` (components/Menu/User/Create.vue)
+- `<MenuUserLogin>` | `<menu-user-login>` (components/Menu/User/Login.vue)

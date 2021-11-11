@@ -49,5 +49,8 @@
   },
   "MenuUserCreate": {
     "description": "Auto imported from components/Menu/User/Create.vue"
+  },
+  "MenuUserLogin": {
+    "description": "Auto imported from components/Menu/User/Login.vue"
   }
 }

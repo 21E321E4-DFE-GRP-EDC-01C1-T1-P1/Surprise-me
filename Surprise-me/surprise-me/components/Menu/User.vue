@@ -4,7 +4,8 @@
     <template #button-content>
       <em>Usuario</em>
     </template>
-    <b-dropdown-item href="#">Logar</b-dropdown-item>
+    <!-- <b-dropdown-item href="#">Logar</b-dropdown-item> -->
+    <MenuUserLogin/>
     <MenuUserCreate/>
     <b-dropdown-item href="#">Editar</b-dropdown-item>
     <b-dropdown-item href="#">Listagem</b-dropdown-item>
