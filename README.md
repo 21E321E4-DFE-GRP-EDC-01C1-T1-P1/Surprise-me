@@ -9,21 +9,25 @@
 </ul>
 
 <h2>Assunto</h2>
-O sistema permite o usuario disponibilizar 
-uma janela de tempo, e com base no clima e 
-no horario e data ele acha o evento ideal.
+O sistema permite se cadastrar em uma gama de eventos criados pelos próprios usuários, com base em detalhes como descrição, preço e status (público / privado). O site fornece filtros para a listagem de eventos, além de ter a opção de classificar os eventos com base na proximidade do local do usuário e do preço. O site também oferece a opção de eventos aleatórios, através do botão "Surprise-me!".
 
 <h2>APIs</h2>
-Api(s) usadas.
+É usado um banco de dados local e os eventos e usuários são consumidos desse banco.
 
 <h2>Tecnologias</h2>
 <ul>
-<li>Tecnologias</li>
+  <li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Vue.js</li>
+  <li>Nuxt</li>
+  <li>Boostrap</li>
 </ul>
 
 <h2>Funcionalidades sugeridas</h2>
 <ul>
-<li>Disponibilizar os eventos por calendário.</li>
+  <li>Disponibilizar os eventos por calendário.</li>
+  <li>Disponibilizar os eventos com base no clima da previsão do tempo no dia.</li>
 </ul>
 <h2>Teste do Sistema</h2>
 <ul>
