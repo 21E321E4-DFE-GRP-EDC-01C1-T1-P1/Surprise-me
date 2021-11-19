@@ -27,6 +27,12 @@
                 {{ item.descricao }}
               </b-card-text>
               <b-card-text>
+                {{ item.preco }}
+              </b-card-text>
+              <b-card-text>
+                {{ item.status }}
+              </b-card-text>
+              <b-card-text>
               Atualizado: {{ dataform(item.updatedAt) }}
               </b-card-text>
             </b-card-body>

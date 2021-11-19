@@ -16,8 +16,8 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Eventos</b-nav-item>
-          <b-nav-item href="#">Calendario</b-nav-item>
+          <b-nav-item href="#">Meus Eventos</b-nav-item>
+          <b-nav-item href="#">Minha Agenda</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">

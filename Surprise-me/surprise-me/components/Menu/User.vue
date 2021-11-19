@@ -7,9 +7,9 @@
     <!-- <b-dropdown-item href="#">Logar</b-dropdown-item> -->
     <MenuUserLogin/>
     <MenuUserCreate/>
-    <b-dropdown-item href="#">Editar</b-dropdown-item>
-    <b-dropdown-item href="#">Listagem</b-dropdown-item>
-    <b-dropdown-item href="#">Excluir</b-dropdown-item>
+    <b-dropdown-item href="#">Minha conta</b-dropdown-item>
+    <b-dropdown-item href="#">Meus eventos criados</b-dropdown-item>
+    <b-dropdown-item href="#">Minha agenda</b-dropdown-item>
   </b-nav-item-dropdown>
   
 </template>

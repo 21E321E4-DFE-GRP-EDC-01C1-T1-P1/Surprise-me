@@ -20,6 +20,7 @@
               <b-card-text>
                 {{ item.descricao }}
               </b-card-text>
+              
 
               <b-button href="#" variant="dark">ver</b-button>
             </b-card>

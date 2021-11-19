@@ -3,10 +3,10 @@
     <template #button-content>
       <em>Evento</em>
     </template>
-    <b-dropdown-item href="#">Disponivel</b-dropdown-item>
-  <MenuEventsCreate/>
-    <b-dropdown-item href="#">Agenda</b-dropdown-item>
-    <b-dropdown-item href="#">Excluir</b-dropdown-item>
+    <MenuEventsCreate/>
+    <b-dropdown-item href="#">Próximos de você</b-dropdown-item>
+    <b-dropdown-item href="#">Mais baratos</b-dropdown-item>
+    <b-dropdown-item href="#">Filtrar eventos</b-dropdown-item>
   </b-nav-item-dropdown>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-dropdown-item v-b-modal.modal-menu-event-create>Cadastro</b-dropdown-item>
+    <b-dropdown-item v-b-modal.modal-menu-event-create>Novo evento</b-dropdown-item>
 
     <b-modal
       id="modal-menu-event-create"
@@ -13,7 +13,7 @@
     >
       <form ref="form" @submit.stop.prevent="handleSubmit">
         <b-form-group
-          label="Name"
+          label="Nome"
           label-for="nome-input"
           invalid-feedback="Name is required"
           :state="nameState"
@@ -70,15 +70,19 @@
           invalid-feedback="Name is required"
           :state="nameState"
         >
-          <b-form-input
+          <!-- <b-form-input
             id="status-input"
             v-model="status"
             :state="nameState"
             required
-          ></b-form-input>
+          ></b-form-input> -->
+          <select class="form-select" aria-label="Default select example" v-model="status" :state="nameState" required>
+            <option selected>Público</option>
+            <option value="Privado">Privado</option>
+          </select>
         </b-form-group>
         <b-form-group
-          label="Pontos"
+          label="Preço (R$)"
           label-for="ponto-input"
           invalid-feedback="Name is required"
           :state="nameState"
@@ -91,7 +95,7 @@
           ></b-form-input>
         </b-form-group>
         <b-form-group
-          label="Imagem Url"
+          label="Imagem (url)"
           label-for="imgUrl-input"
           invalid-feedback="Name is required"
           :state="nameState"

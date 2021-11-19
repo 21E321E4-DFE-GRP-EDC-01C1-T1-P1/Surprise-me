@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-dropdown-item v-b-modal.modal-menu-user-create>Cadastrar</b-dropdown-item>
+    <b-dropdown-item v-b-modal.modal-menu-user-create>Cadastro</b-dropdown-item>
 
     <b-modal
       id="modal-menu-user-create"

@@ -16,7 +16,7 @@
     />
     <br />
     <input
-      type="password"
+      type="text"
       placeholder="Criador do evento"
       class="mb-4 w-auto p-4 shadow-2xl rounded-lg"
       v-model="criador"
@@ -38,7 +38,7 @@
     <br />
     <input
       type="text"
-      placeholder="Pontos"
+      placeholder="Preço (R$)"
       class="mb-4 w-auto p-4 shadow-2xl rounded-lg"
       v-model="ponto"
     />
