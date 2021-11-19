@@ -15,8 +15,8 @@ class EventsController {
       });
     }
 
-    const { nome, descricao, criador, endereco, status, ponto ,imgUrl} = req.body;
-    const data = { nome, descricao, criador, endereco, status, ponto ,imgUrl};
+    const { nome, descricao, criador, endereco, status, preco ,imgUrl} = req.body;
+    const data = { nome, descricao, criador, endereco, status, preco ,imgUrl};
     console.log(data)
     await Events.create(data, (err) => {
       if (err)

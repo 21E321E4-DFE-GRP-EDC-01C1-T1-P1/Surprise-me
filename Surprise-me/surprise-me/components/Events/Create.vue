@@ -40,7 +40,7 @@
       type="text"
       placeholder="Preço (R$)"
       class="mb-4 w-auto p-4 shadow-2xl rounded-lg"
-      v-model="ponto"
+      v-model="preco"
     />
     <br />
     <input
@@ -79,7 +79,7 @@ export default {
       criador: "",
       endereco: "",
       status: "",
-      ponto: "",
+      preco: "",
       imgUrl: "",
       items: [],
     };
@@ -98,7 +98,7 @@ export default {
           criador: this.criador,
           endereco: this.endereco,
           status: this.status,
-          ponto: this.ponto,
+          preco: this.preco,
           imgUrl: this.imgUrl,
         }),
       })

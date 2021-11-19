@@ -7,7 +7,7 @@ const Event = mongoose.Schema(
     criador: { type: String },
     endereco: { type: String },
     status: { type: String },
-    ponto: { type: String },
+    preco: { type: String },
     imgUrl: { type: String },
   },
   {

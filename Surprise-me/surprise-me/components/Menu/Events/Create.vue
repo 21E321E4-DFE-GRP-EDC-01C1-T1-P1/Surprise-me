@@ -83,13 +83,13 @@
         </b-form-group>
         <b-form-group
           label="Preço (R$)"
-          label-for="ponto-input"
+          label-for="preco-input"
           invalid-feedback="Name is required"
           :state="nameState"
         >
           <b-form-input
-            id="ponto-input"
-            v-model="ponto"
+            id="preco-input"
+            v-model="preco"
             :state="nameState"
             required
           ></b-form-input>
@@ -127,7 +127,7 @@ export default {
       criador: "",
       endereco: "",
       status: "",
-      ponto: "",
+      preco: "",
       imgUrl: "",
       nameState: null,
       submittedNames: [],
@@ -155,7 +155,7 @@ export default {
         (this.criador = ""),
         (this.endereco = ""),
         (this.status = ""),
-        (this.ponto = ""),
+        (this.preco = ""),
         (this.imgUrl = "");
     },
     handleSubmit() {
@@ -180,7 +180,7 @@ export default {
           criador: this.criador,
           endereco: this.endereco,
           status: this.status,
-          ponto: this.ponto,
+          preco: this.preco,
           imgUrl: this.imgUrl,
         }),
       })

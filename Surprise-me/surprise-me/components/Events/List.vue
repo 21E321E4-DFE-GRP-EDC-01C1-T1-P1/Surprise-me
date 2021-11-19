@@ -27,7 +27,7 @@
                 {{ item.descricao }}
               </b-card-text>
               <b-card-text>
-                {{ item.preco }}
+                Preço: R${{ item.preco }} 
               </b-card-text>
               <b-card-text>
                 {{ item.status }}
