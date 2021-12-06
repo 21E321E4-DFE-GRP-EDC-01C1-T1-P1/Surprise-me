@@ -51,58 +51,7 @@
             required
           ></b-form-input>
         </b-form-group>
-        <b-form-group
-          label="Cargo"
-          label-for="posicao-input"
-          invalid-feedback="Name is required"
-          :state="nameState"
-        >
-          <b-form-input
-            id="posicao-input"
-            v-model="posicao"
-            :state="nameState"
-            required
-          ></b-form-input>
-        </b-form-group>
-        <b-form-group
-          label="Status"
-          label-for="status-input"
-          invalid-feedback="Name is required"
-          :state="nameState"
-        >
-          <b-form-input
-            id="status-input"
-            v-model="email"
-            :state="nameState"
-            required
-          ></b-form-input>
-        </b-form-group>
-        <b-form-group
-          label="endereco"
-          label-for="endereco-input"
-          invalid-feedback="Name is required"
-          :state="nameState"
-        >
-          <b-form-input
-            id="endereco-input"
-            v-model="email"
-            :state="nameState"
-            required
-          ></b-form-input>
-        </b-form-group>
-        <b-form-group
-          label="Imagem Url"
-          label-for="imgUrl-input"
-          invalid-feedback="Name is required"
-          :state="nameState"
-        >
-          <b-form-input
-            id="imgUrl-input"
-            v-model="imgUrl"
-            :state="nameState"
-            required
-          ></b-form-input>
-        </b-form-group>
+        
       </form>
       <template #modal-footer="{ ok, cancel }">
         <b-button size="sm" variant="danger" @click="cancel()">
@@ -175,10 +124,6 @@ export default {
           nome: this.nome,
           email: this.email,
           senha: this.senha,
-          posicao: this.posicao,
-          status: this.status,
-          endereco: this.endereco,
-          imgUrl: this.imgUrl,
         }),
       })
         .then((res) => res.json())
